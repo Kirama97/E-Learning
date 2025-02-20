@@ -23,6 +23,17 @@ nav a:hover {
     color: var(--primaire);
 }
 
+button {
+    transition: 0.5s ease;
+}
+button:hover {
+     background-color:  #c50b5f;
+     cursor: pointer;
+}
+.btn1:hover {
+     background-color:  #e23a8ee8;
+     color: white;
+}
 
 input::placeholder {
     font-size: 12px;
@@ -35,4 +46,19 @@ input::placeholder {
     border-radius: 20px;
     box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.068);
 
+}
+
+
+.experience_item:hover ion-icon 
+,button:hover ion-icon {
+    animation: fleche 1s ease-in-out infinite;
+}
+
+@keyframes fleche {
+    0%{
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translate(0px);
+    }
 }
