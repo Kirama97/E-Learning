@@ -27,3 +27,9 @@ nav a:hover {
 input::placeholder {
     font-size: 12px;
 }
+
+.experience_item:hover {
+    background-color: white;
+    cursor: pointer;
+
+}
