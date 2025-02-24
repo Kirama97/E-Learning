@@ -114,7 +114,7 @@ input::placeholder {
         color: white;
         z-index: -1;
         transition: 0.5s;
-        border-bottom-right-radius:20px ;
+        border-bottom-right-radius:100px ;
         border-top-left-radius: 100px;
         border-bottom-left-radius: 50px;
     }
