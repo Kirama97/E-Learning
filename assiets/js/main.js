@@ -6,7 +6,7 @@ if (typeof WOW !== 'undefined') {
 }
 
 const burguer = document.querySelector(".burguer");
-const nav = document.querySelector(".nav_link");
+const nav = document.querySelector("nav");
 
 
 burguer.addEventListener("click", () => {

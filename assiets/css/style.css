@@ -19,6 +19,13 @@
 
 }
 
+nav {
+    display: flex;
+}
+
+
+
+
 nav a:hover {
     color: var(--primaire);
 }
@@ -33,9 +40,10 @@ button:hover {
 .btn1:hover {
      background-color:  #e23a8ee8;
      color: white;
+
 }
 
-.more {
+.more{
     transition : 0.5s ease;
 }
 
@@ -75,4 +83,46 @@ input::placeholder {
     100% {
         transform: translate(0px);
     }
+}
+
+@media (max-width:768px){
+
+    .burguer.active {
+        color: #A4074D;
+       
+    }
+   
+    nav.active {
+      display: flex;
+      height: 50vh;
+      opacity: 1;
+
+
+    }
+
+    nav {
+        display: flex;
+        opacity: 0;
+        height: 0;
+        position:absolute ; 
+        top: 70px;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #A4074D;
+        width: 100%;
+        right: 0;
+        color: white;
+        z-index: -1;
+        transition: 0.5s;
+        border-bottom-right-radius:20px ;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 50px;
+    }
+
+
+    nav a:hover {
+        color: gold;
+    }
+
+
 }
