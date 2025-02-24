@@ -35,6 +35,15 @@ button:hover {
      color: white;
 }
 
+.more {
+    transition : 0.5s ease;
+}
+
+.more:hover {
+    color :var(--primaire);
+    
+}
+
 input::placeholder {
     font-size: 12px;
 }
@@ -54,7 +63,8 @@ input::placeholder {
 
 
 .experience_item:hover ion-icon 
-,button:hover ion-icon {
+,button:hover ion-icon
+,.more:hover ion-icon {
     animation: fleche 1s ease-in-out infinite;
 }
 
